@@ -20,7 +20,7 @@ const AddItem = ({onsubmit})=> {
    // onSubmit(formdata);
 
         console.log("Form submited")
-        fetch('http://ec2-54-167-54-70.compute-1.amazonaws.com:8080/addItem',{
+        fetch('http://ec2-44-219-254-125.compute-1.amazonaws.com:8080/addItem',{
             method: 'POST',
             headers:{
                 'Content-Type':'Application/json',

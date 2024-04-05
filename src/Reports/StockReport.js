@@ -11,7 +11,7 @@ const StockReport = ({onsubmit}) => {
     useEffect(() =>{
         const fetchdata = async() => {
             try{
-                const response = await fetch('http://ec2-54-167-54-70.compute-1.amazonaws.com:8080/fetchItems');
+                const response = await fetch('http://ec2-44-219-254-125.compute-1.amazonaws.com:8080/fetchItems');
                 const jsonData = await response.json();
                 setData(jsonData);
             }catch(error){

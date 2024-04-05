@@ -15,7 +15,7 @@ const SellItem = ({onsubmit}) => {
     useEffect(() =>{
         const fetchdata = async() => {
             try{
-                const response = await fetch('http://ec2-54-167-54-70.compute-1.amazonaws.com:8080/getItemWithTypes');
+                const response = await fetch('http://ec2-44-219-254-125.compute-1.amazonaws.com:8080/getItemWithTypes');
                 const data = await response.json();
                 setItemData(data.items)
             }catch(error){
@@ -38,7 +38,7 @@ const SellItem = ({onsubmit}) => {
             quantity,
         };
 
-        fetch('http://ec2-54-167-54-70.compute-1.amazonaws.com:8080/sellproduct',{
+        fetch('http://ec2-44-219-254-125.compute-1.amazonaws.com:8080/sellproduct',{
             method: 'POST',
             headers:{
                 'Content-Type':'Application/json',
